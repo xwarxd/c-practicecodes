@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-	int num, dig, a=1, i=1, digit;
+	int num, dig, a=1, digit;
 	string inwords;
     cout<<"Please enter any number \n";
     cin>>num;
@@ -14,7 +14,7 @@ int main()
         cout<<"one";
     else
     {
-        for(i=0; i<dig; i++)
+        for(int i=0; i<dig; i++)
         {
             digit=((num%a)/(a/10));
             switch(digit)
