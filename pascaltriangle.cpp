@@ -5,7 +5,7 @@ int main()
 {
     int n;
 
-    cout<<"Please enter the row and column of element\n";
+    cout<<"Please enter the number of rows of pascal's triangle \n";
     cin>>n;
 
     int arr[n][n];
@@ -15,7 +15,7 @@ int main()
         for(int j = i; j < n; j++)
         cout << " ";
 
-        for(j=0; j < i; j++)
+        for(int j=0; j < i; j++)
         {
             if(j==0 || j==i-1)
                 arr[i][j] = 1;
@@ -25,6 +25,6 @@ int main()
         }
         cout << endl;
     }
-    
+
     return 0;
 }
